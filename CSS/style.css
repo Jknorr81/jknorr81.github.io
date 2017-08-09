@@ -41,6 +41,9 @@ a {
   transition: 0.5s;
 }
 
+body {
+  position: relative;
+}
 /* ==================================================
   Elements
   ================================================== */
@@ -89,24 +92,6 @@ a:hover {
   text-decoration: none !important;
 }
 
-.scrolltop {
-  display: none;
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: #199EB8;
-  color: #fff;
-  text-align: center;
-  font-size: 24px;
-}
-
-.scrolltop:hover, .scrolltop:active, .scrolltop:focus {
-  color: #fff !important;
-  opacity: .75;
-}
 
 /* ==================================================
   Hero Styling
@@ -155,122 +140,12 @@ a:hover {
 ================================================== */
 #header {
   background: #199EB8;
-  height: 78px;
+  height: 50px;
 }
 
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/* Nav Menu Essentials */
-.nav-menu, .nav-menu * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.nav-menu ul {
-  position: absolute;
-  display: none;
-  top: 100%;
-  left: 0;
-  z-index: 99;
-}
-
-.nav-menu li {
-  position: relative;
-  white-space: nowrap;
-}
-
-.nav-menu > li {
-  float:left;
-}
-
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
-  display: block;
-}
-
-.nav-menu ul ul {
-  top: 0;
-  left: 100%;
-}
-
-.nav-menu ul li {
-  min-width: 180px;
-}
-
-
-
-/* Nav Meu Container */
-#nav-menu-container {
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  #nav-menu-container {
-    display: inline-flex;
-  }
-}
-
-/* Nav Meu Styling */
-.nav-menu a {
-  padding: 22px 15px 18px 15px;
-  text-decoration: none;
-  display: inline-flex;
-  color: #fff;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 25px;
-  outline: none;
-}
-
-.nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.nav-menu ul {
-  margin: 4px 0 0 15px;
-  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
-  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
-}
-
-.nav-menu ul li {
-  background: #fff;
-  border-top: 1px solid #f4f4f4;
-}
-
-.nav-menu ul li:first-child {
-  border-top: 0;
-}
-
-.nav-menu ul li:hover {
-  background: #199EB8;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.nav-menu ul li a {
-  color: #333;
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-  padding: 10px 15px;
-}
-
-.nav-menu ul li a:hover {
-  color: #fff;
-}
-
-.nav-menu ul ul {
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  #mobile-nav-toggle {
-    display: inline-flex;
-  }
-}
 
 
 /* ==================================================
